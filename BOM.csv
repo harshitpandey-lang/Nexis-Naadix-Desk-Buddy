@@ -1,1 +1,22 @@
-
+Part,Quantity,Purpose,Approx Cost (USD),Notes
+Raspberry Pi 5 (4GB),1,Main Controller,60,Runs UI voice processing and OAI communication
+Official Raspberry Pi Touchscreen,1,User Interface,60,Primary display for Nexis
+ESP32-S3 Dev Board,1,HID Controller,10,Keyboard and mouse emulation
+INMP441 I2S Microphone,1,Voice Input,3,Speech capture
+MAX98357A Amplifier,1,Audio Output,3,I2S digital amplifier
+4Ω 3W Speaker,1,Voice Feedback,2,Connected to amplifier
+Rotary Encoder Module,1,Navigation Control,2,Menu and volume control
+Push Buttons,3,User Controls,1,Confirm cancel and shortcut actions
+USB-C Connector,1,Power Input,1,Main power connection
+LiPo Battery Connector,1,Battery Support,1,Optional portable operation
+3.7V LiPo Battery,1,Portable Power,10,Optional battery backup
+Fan Connector Header,1,Cooling Expansion,1,Future expansion
+Pin Headers,Several,Board Connections,2,GPIO and module access
+PCB Fabrication,1,Custom PCB,15,Manufactured PCB
+PCB Assembly Components,1 Set,Passive Components,10,Resistors capacitors etc
+3D Printed Enclosure,1,Mechanical Housing,15,Custom designed case
+M2.5 Screws and Standoffs,1 Set,Mechanical Assembly,3,Display and PCB mounting
+USB Cable,1,Power and Debugging,3,Development and operation
+Wiring and Connectors,1 Set,Internal Connections,5,JST and jumper wiring
+Miscellaneous Hardware,1 Set,Assembly Materials,5,Spacers adhesive and extras
+Total Estimated Cost,,Complete System,≈208 USD,May vary by supplier and location
