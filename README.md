@@ -1,156 +1,234 @@
-# Nexis-Naadix-Desk-Buddy
-Nexis is and AI-powered desktop companion desiged to simplify interaction with a computer through natural langage commands.
+# Recreating Nexis
 
-The project combines a Raspberry Pi, ESP 32-S3, Touhscreen display, microphone, Spekaer, and cloud-based AI services to create a physical desk assistant capable of understanding instructions and controlling a computer through standard USB Human Interface device (HID) protocols.
+This section documents the process required to recreate the project from scratch.
+
+## Requirements
+
+### Hardware
+
+* Raspberry Pi 4 Model B
+* Official Raspberry Pi Display
+* ESP32-S3
+* INMP441 Microphone
+* MAX98357A Amplifier
+* Speaker
+* Rotary Encoder
+* Push Buttons
+* LiPo Battery (Optional)
+
+See BOM.md for the complete list.
+
 ---
-## Project Goal
-The goal of nexis is to creat a hardware device that allows users to perform computer tasks through simple spoken commands.
 
-Instead of manully interacting with a keyboard and mouse, users communicate with nexis whixh converts commands into structured actions and executes them on a connected computer.
+## Software
 
-Examples :
+### Raspberry Pi
 
-Upload a video
-Open applications
-Launch websites
-Manage files
-Perform repetitive workflows
-System Overview
-User
- ↓
-Touchscreen Interface
- ↓
-Voice Command
- ↓
-Raspberry Pi
- ↓
-OAI Cloud Agent
- ↓
-Task Plan
- ↓
-User Approval
- ↓
-ESP32-S3 HID Controller
- ↓
-Computer
-Main Components
-Raspberry Pi
+Install:
 
-Acts as the primary controller.
+* Raspberry Pi OS
+* Python
+* Git
+* Required libraries
 
-Responsibilities:
+### ESP32
 
-Touchscreen interface
-Voice processing
-Communication with OAI
-Task monitoring
-Feedback validation
-ESP32-S3
+Install:
 
-Acts as the HID controller.
+* Arduino IDE or PlatformIO
+* ESP32 Board Package
 
-Responsibilities:
+---
 
-USB keyboard emulation
-USB mouse emulation
-Command execution
-Display
+# Step 1 — Clone Repositories
 
-Official Raspberry Pi touchscreen used for:
+Clone:
 
-Status display
-Task approval
-Device settings
-Audio System
+```bash
+git clone <oai-repository>
+```
 
-INMP441 microphone
+Clone:
 
-Voice input
+```bash
+git clone <nexis-repository>
+```
 
-MAX98357A amplifier + speaker
+---
 
-Audio feedback
-Features
-Voice Commands
+# Step 2 — Prepare Raspberry Pi
 
-Users can issue commands naturally.
+Flash Raspberry Pi OS.
 
-AI Task Planning
+Connect:
 
-Tasks are interpreted by the OAI cloud agent.
+* Display
+* Keyboard
+* Mouse
 
-Touchscreen Approval
+Perform:
 
-Actions are displayed before execution.
+```bash
+sudo apt update
+sudo apt upgrade
+```
 
-HID Automation
+Install project dependencies.
 
-Commands are executed through keyboard and mouse emulation.
+---
 
-Feedback Verification
+# Step 3 — Configure OAI
 
-Task progress is monitored and validated.
+Create environment file.
 
-Hardware
-Raspberry Pi
-Official Raspberry Pi Display
-ESP32-S3
-INMP441 Microphone
-MAX98357A Amplifier
-Speaker
-USB-C Power
-LiPo Battery Support
-Rotary Encoder
-Repository Structure
-pcb/
-        KiCad design files
+Add:
 
-enclosure/
-        CAD models and enclosure files
+```text
+API_KEY=
+MQTT_SERVER=
+```
 
+Run test commands.
+
+Verify OAI returns valid plans.
+
+---
+
+# Step 4 — Flash ESP32
+
+Open:
+
+```text
 firmware/
-        ESP32-S3 firmware
+```
 
-README.md
-        Project overview
+Compile firmware.
 
-BOM.csv
-        Bill of materials
+Upload to ESP32-S3.
 
-HARDWARE.md
-        Hardware documentation
+Verify:
 
-FIRMWARE.md
-        Firmware documentation
+* WiFi connection
+* HID connection
 
-JOURNAL.md
-        Development log
+---
 
-IMAGES.md
-        Image references and renders
+# Step 5 — Manufacture PCB
 
-Steps_to_self_create.md
-        Manufacturing and assembly notes
-Current Status
+Open:
 
-Current development stage:
+```text
+pcb/
+```
 
-Hardware architecture completed
-Schematic design completed
-PCB design in progress
-Firmware development in progress
-Future Improvements
-Local AI support
-Offline operation
-Enhanced feedback system
-Improved touchscreen interface
-Expanded automation capabilities
-Hack Club Fallout
+Generate:
 
-Nexis is being developed as a Hack Club Fallout project with a focus on hardware design, embedded systems, and practical AI-assisted computer interaction.
+* Gerbers
+* Drill Files
+* BOM
 
-All PCB files, firmware, documentation, CAD files, and build logs are maintained within this repository.
+Submit to PCB manufacturer.
 
-Version 1.0
+---
 
-Author: Harshit Pandey
+# Step 6 — Assemble Hardware
+
+Install:
+
+* Raspberry Pi
+* Display
+* PCB
+* Speaker
+* Buttons
+* Encoder
+
+Complete wiring.
+
+Verify power rails.
+
+---
+
+# Step 7 — System Test
+
+Test:
+
+### Audio
+
+* Microphone
+* Speaker
+
+### Input
+
+* Touchscreen
+* Buttons
+* Encoder
+
+### Communication
+
+* Pi ↔ ESP32
+
+### HID
+
+* Keyboard
+* Mouse
+
+---
+
+# Step 8 — Final Validation
+
+Test example commands:
+
+```text
+Open YouTube
+
+Open Calculator
+
+Search Google
+
+Upload File
+```
+
+Verify:
+
+* OAI response
+* Approval screen
+* HID execution
+
+---
+
+# Manufacturing Notes
+
+The PCB included in this repository is an early revision.
+
+Future revisions may change:
+
+* Component placement
+* Routing
+* Connector locations
+
+Always verify the latest schematic before ordering boards.
+
+---
+
+# Current Project State
+
+Completed:
+
+* OAI
+* CAD Design
+* PCB Design
+* Documentation
+
+In Progress:
+
+* Firmware
+* PCB Validation
+* Physical Assembly
+
+Planned:
+
+* Manufacturing
+* Testing
+* Final Enclosure Revision
+
+The repository represents the current development state and will continue evolving as physical prototypes are produced and tested.
