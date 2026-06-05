@@ -35,13 +35,26 @@ It uses esp32 to give HID code to the PC connected to make it do or perform a pa
 * Speaker
 * Rotary Encoder
 * Push Buttons
-* LiPo Battery (Optional)
+* LiPo Battery 
 
 See BOM.md for the complete list.
 
 ---
 
 ## Software
+
+- Backend Language
+  - Python
+- Framework
+  - FastAPI
+- AI
+  - OpenAI API
+  - Claude API
+  - Gemini API
+- Data Models
+  - Pydantic
+- Hosting
+  - Render
 
 ### Raspberry Pi
 
@@ -61,200 +74,26 @@ Install:
 
 ---
 
-# Step 1 — Clone Repositories
+## Future Improvements
 
-Clone:
+- It can work as full work automation
+- It can also control the other tech stacks of your rooms
+- If developed correctly it can do the job of any person
 
-```bash
-git clone <oai-repository>
-```
+## Acknowledgement
 
-Clone:
-
-```bash
-git clone <nexis-repository>
-```
+- The raspberrry pi model 4 was alloted by my college (Jaypee Institute of Information Technology), which I am grateful.
+- I am grateful for the oppurtunity presented by the Hack Club called fallout, Which I am a part of and am proud of making this project under their guidance for more reference realted to the fallout event (https://fallout.hackclub.com/path).
+- I am also grateful for the help given by my seniors.
 
 ---
-
-# Step 2 — Prepare Raspberry Pi
-
-Flash Raspberry Pi OS.
-
-Connect:
-
-* Display
-* Keyboard
-* Mouse
-
-Perform:
-
-```bash
-sudo apt update
-sudo apt upgrade
-```
-
-Install project dependencies.
+<img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-22-04AM-000_CustomizedView11063301339_png" src="https://github.com/user-attachments/assets/ef42fef7-eaa2-4801-a025-914a332a9eec" />
+<img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-20-15AM-000_CustomizedView27867991317_png" src="https://github.com/user-attachments/assets/fed139fc-2f5e-46be-894c-0a300390143e" />
+<img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-20-59AM-000_CustomizedView38618477084_png" src="https://github.com/user-attachments/assets/683c5ec4-a49e-458a-8d4e-0638fc4fad9f" />
+<img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-21-36AM-000_CustomizedView11682904690_png" src="https://github.com/user-attachments/assets/4a57e69e-43c5-462c-ad04-e4bb52c520dc" />
 
 ---
-
-# Step 3 — Configure OAI
-
-Create environment file.
-
-Add:
-
-```text
-API_KEY=
-MQTT_SERVER=
-```
-
-Run test commands.
-
-Verify OAI returns valid plans.
-
----
-
-# Step 4 — Flash ESP32
-
-Open:
-
-```text
-firmware/
-```
-
-Compile firmware.
-
-Upload to ESP32-S3.
-
-Verify:
-
-* WiFi connection
-* HID connection
-
----
-
-# Step 5 — Manufacture PCB
-
-Open:
-
-```text
-pcb/
-```
-
-Generate:
-
-* Gerbers
-* Drill Files
-* BOM
-
-Submit to PCB manufacturer.
-
----
-
-# Step 6 — Assemble Hardware
-
-Install:
-
-* Raspberry Pi
-* Display
-* PCB
-* Speaker
-* Buttons
-* Encoder
-
-Complete wiring.
-
-Verify power rails.
-
----
-
-# Step 7 — System Test
-
-Test:
-
-### Audio
-
-* Microphone
-* Speaker
-
-### Input
-
-* Touchscreen
-* Buttons
-* Encoder
-
-### Communication
-
-* Pi ↔ ESP32
-
-### HID
-
-* Keyboard
-* Mouse
-
----
-
-# Step 8 — Final Validation
-
-Test example commands:
-
-```text
-Open YouTube
-
-Open Calculator
-
-Search Google
-
-Upload File
-```
-
-Verify:
-
-* OAI response
-* Approval screen
-* HID execution
-
----
-
-# Manufacturing Notes
-
-The PCB included in this repository is an early revision.
-
-Future revisions may change:
-
-* Component placement
-* Routing
-* Connector locations
-
-Always verify the latest schematic before ordering boards.
-
----
-
-# Current Project State
-
-Completed:
-
-* OAI
-* CAD Design
-* PCB Design
-* Documentation
-
-In Progress:
-
-* Firmware
-* PCB Validation
-* Physical Assembly
-
-Planned:
-
-* Manufacturing
-* Testing
-* Final Enclosure Revision
-
-The repository represents the current development state and will continue evolving as physical prototypes are produced and tested.
-
----
+# Zine page
 <img width="874" height="1240" alt="WhatsApp Image 2026-06-04 at 8 46 59 AM" src="https://github.com/user-attachments/assets/b5e7b2c2-8e9a-4f77-adbe-37a7350d4056" />
 
 ---
