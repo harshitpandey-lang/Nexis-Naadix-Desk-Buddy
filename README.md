@@ -10,78 +10,42 @@ It uses esp32 to give commands to the device connected through the USB.
 Nexis is a desk buddy which can do all sort of works upon good training and customisation. It uses a raspberry pi and open source AI model to break works into smaller steps. It uses the the local llm to generte the HID code respective to every step given uses python to asses if the work is performed then goes ahed with next step till all are completed. 
 It uses esp32 to give HID code to the PC connected to make it do or perform a particular task. It can communicate or given instructionthrough the Touchscreen and Microphone.
 
-## Features
-AI Task Planning
-
-Nexis takes a high-level instruction and converts it into smaller executable steps.
-
-Example:
-
-"Create a folder, download the files, organize them, and email the report."
-
-The AI generates a structured execution plan before performing actions.
-
-Local + Cloud Intelligence
-
-The system combines:
-
-Local language models running on Raspberry Pi
-Cloud-hosted AI agents
-Hybrid decision making
-Reduced latency for common tasks
-Enhanced capabilities for complex tasks
-Physical Computer Control
-
-Using an ESP32-S3 acting as a USB HID device, Nexis can:
-
-Move the cursor
-Click buttons
-Type text
-Execute shortcuts
-Navigate software interfaces
-
-Just like a human sitting in front of the computer.
-
-Voice Interaction
-
-Using the onboard microphone and speaker, users can:
-
-Give spoken instructions
-Receive spoken feedback
-Interact hands-free
-Touchscreen Interface
-
-The integrated display provides:
-
-Chat interaction
-System status
-Task monitoring
-Future dashboard functionality
-
 ---
+
 ## System Architecture
 User
+
  │
  ├── Voice Input
+ 
  ├── Touchscreen Input
+ 
  │
  ▼
 Raspberry Pi 4
  │
  ├── Local LLM
+ 
  ├── Task Planner
+ 
  ├── Verification Engine
+ 
  └── Cloud AI Agent
+ 
  │
  ▼
 ESP32-S3 HID Controller
  │
  ▼
 Connected Computer
+
  │
  ├── Keyboard Events
+ 
  ├── Mouse Events
+ 
  └── Workflow Execution
+ 
 
  
 ## Specifications
