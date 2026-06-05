@@ -16,14 +16,19 @@ It uses esp32 to give HID code to the PC connected to make it do or perform a pa
 User
 
  │
+ 
  ├── Voice Input
  
  ├── Touchscreen Input
  
  │
+ 
  ▼
+ 
 Raspberry Pi 4
+
  │
+ 
  ├── Local LLM
  
  ├── Task Planner
@@ -33,13 +38,19 @@ Raspberry Pi 4
  └── Cloud AI Agent
  
  │
+ 
  ▼
+ 
 ESP32-S3 HID Controller
+
  │
+ 
  ▼
+ 
 Connected Computer
 
  │
+ 
  ├── Keyboard Events
  
  ├── Mouse Events
