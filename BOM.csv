@@ -1,22 +1,21 @@
-Part,Quantity,Purpose,Approx Cost (USD),Notes
-Raspberry Pi 4 model B ,1,Main Controller,60,Runs UI voice processing and OAI communication
-Official Raspberry Pi Touchscreen,1,User Interface,60,Primary display for Nexis
-ESP32-S3 Dev Board,1,HID Controller,10,Keyboard and mouse emulation
-INMP441 I2S Microphone,1,Voice Input,3,Speech capture
-MAX98357A Amplifier,1,Audio Output,3,I2S digital amplifier
-4Ω 3W Speaker,1,Voice Feedback,2,Connected to amplifier
-Rotary Encoder Module,1,Navigation Control,2,Menu and volume control
-Push Buttons,3,User Controls,1,Confirm cancel and shortcut actions
-USB-C Connector,1,Power Input,1,Main power connection
-LiPo Battery Connector,1,Battery Support,1,Optional portable operation
-3.7V LiPo Battery,1,Portable Power,10,Optional battery backup
-Fan Connector Header,1,Cooling Expansion,1,Future expansion
-Pin Headers,Several,Board Connections,2,GPIO and module access
-PCB Fabrication,1,Custom PCB,15,Manufactured PCB
-PCB Assembly Components,1 Set,Passive Components,10,Resistors capacitors etc
-3D Printed Enclosure,1,Mechanical Housing,15,Custom designed case
-M2.5 Screws and Standoffs,1 Set,Mechanical Assembly,3,Display and PCB mounting
-USB Cable,1,Power and Debugging,3,Development and operation
-Wiring and Connectors,1 Set,Internal Connections,5,JST and jumper wiring
-Miscellaneous Hardware,1 Set,Assembly Materials,5,Spacers adhesive and extras
-Total Estimated Cost,,Complete System,≈208 USD,May vary by supplier and location
+Item,Category,Qty,Unit Price (INR),Total (INR),Supplier,Product Link,Purpose,Notes
+Raspberry Pi 4 Model B (4GB),Compute,1,11299,11299,Robu,https://robu.in/product/raspberry-pi-4-model-b-with-4-gb-ram/,Main Controller,Runs UI voice processing and OAI communication
+Seeed Studio 7 inch Capacitive Touchscreen,Display,1,10139,10139,Robu,https://robu.in/product/seeed-studio-7-inch-1024x600-capacitive-touchscreen/,Primary User Interface,1024x600 touchscreen display
+ESP32-S3 N16R8 Development Board,Microcontroller,1,540,540,Robu,https://robu.in/product/esp32-s3-development-board-with-s3-n16r8/,USB HID Controller,Keyboard and mouse emulation
+GY-SPH0645LM4H I2S MEMS Microphone,Audio Input,1,489,489,Robu,https://robu.in/product/gy-sph0645lm4h-i2s-digital-audio-interfaces-mems-microphone-sensor/,Voice Capture,I2S digital microphone
+Adafruit MAX98357A I2S Amplifier,Audio Output,1,730,730,Robu,https://robu.in/product/adafruit-max98357a-i2s-3w-class-d-amplifier-breakout-board/,Speaker Amplifier,Digital audio amplifier
+Electronic Spices 2in 4Ω 5W Speaker,Audio Output,1,143,143,Amazon,https://www.amazon.in/Electronic-Spices-Power-Woofer-Speaker/dp/B0BN44HPF9/,Voice Feedback,Main speaker
+KY-040 Rotary Encoder Module,Input,1,107,107,Amazon,https://www.amazon.in/Electronic-Spices-KY-040-encoder-development/dp/B0BHWCWJDR/,Navigation Control,Menu and volume navigation
+Tactile Push Buttons,Input,3,19,57,Amazon,https://www.amazon.in/Tactile-momentry-button-Switch-Button/dp/B07NCZJX3M/,User Controls,Confirm cancel shortcut buttons
+Samsung INR50S 5000mAh Battery,Power,1,649,649,Robu,https://robu.in/product/samsung-3-7v-5000mah-drone-battery-pack/,Portable Power,Optional battery backup
+2 Pin Male Female Wire Connector Set,Power,1,88,88,Amazon,https://www.amazon.in/Female-2-5mm-Cable-Connector-Silicone/dp/B0837W4DC8/,Battery and Internal Wiring Connector,Pre-wired male and female connectors for battery and module connections
+USB-C Connector Module,Power,1,50,50,Generic,Local Supplier,Power Input,USB-C charging and power
+Fan Header 2 Pin,Expansion,1,15,15,Generic,Local Supplier,Cooling Expansion,Future cooling support
+2.54mm Pin Headers,Connectors,2,20,40,Generic,Local Supplier,Interconnects,GPIO breakout connections
+PCB Fabrication (2 Layer),PCB,1,1200,1200,JLCPCB,https://jlcpcb.com/,Custom PCB,Main Nexis PCB
+PCB Assembly Components Set,PCB,1,500,500,Mouser/DigiKey,Various,Passives,Resistors capacitors LEDs connectors
+M2.5 Standoffs and Screws,Mechanical,1,200,200,Amazon,Various,Assembly,PCB and display mounting
+Internal Wiring Set,Mechanical,1,250,250,Amazon,Various,Wiring,Jumper wires JST cables
+3D Printed Enclosure,Mechanical,1,1500,1500,Self Manufactured,N/A,Enclosure,Fusion 360 custom design
+USB-C Cable,Accessory,1,150,150,Amazon,Various,Power and Debugging,Development and deployment
+Miscellaneous Hardware,Mechanical,1,300,300,Various,Various,Assembly,Adhesive spacers nuts inserts
