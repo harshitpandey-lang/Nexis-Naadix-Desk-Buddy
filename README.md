@@ -129,6 +129,11 @@ Install:
 This process continues until the entire workflow is completed.
 
 ---
+## Gallery
+|---------------|----------------|---------------|----------------|-------------|------------|
+| <img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-25-37AM-000_CustomizedView8988086381_png" src="https://github.com/user-attachments/assets/b77763a1-a549-44a0-bfa6-dd492a8bac73" /> | <img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-22-04AM-000_CustomizedView11063301339_png" src="https://github.com/user-attachments/assets/5c248b59-53d9-4192-b686-e38ccb909070" /> | <img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-21-36AM-000_CustomizedView11682904690_png" src="https://github.com/user-attachments/assets/6164724f-40d4-4d7c-93f2-3191f8126337" /> | <img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-20-59AM-000_CustomizedView38618477084_png" src="https://github.com/user-attachments/assets/7bfca1ae-367c-4b8e-880c-0d4b1b8a9a82" /> | <img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-20-36AM-000_CustomizedView10470017405_png" src="https://github.com/user-attachments/assets/36904d80-f7c2-493c-b4ef-9acd55fdf369" /> |<img width="1366" height="410" alt="model_nexis_2026-Jun-03_01-20-15AM-000_CustomizedView27867991317_png" src="https://github.com/user-attachments/assets/0bbf32c7-7a68-4bed-ad2c-3b902730f3d9" /> |
+
+---
 ## Future Improvements
 
 - It can work as full work automation
