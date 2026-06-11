@@ -80,6 +80,10 @@ Connected Computer
 | Push Buttons | User interaction |
 | LiPo Battery | Portable power |
 
+<img width="211" height="176" alt="{549CDC2C-EC70-4538-B992-6CFFC3E95AC3}" src="https://github.com/user-attachments/assets/bd43ffa1-3f87-47c6-be5f-c1ea334ff9be" />
+<img width="1068" height="572" alt="nexus deskbuddy" src="https://github.com/user-attachments/assets/49230096-0863-433c-9016-1df34559e010" />
+
+
 See BOM.md for the complete bill of materials.
 
 ---
